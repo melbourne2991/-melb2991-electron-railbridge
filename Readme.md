@@ -1,8 +1,10 @@
 # Readme
 
+A thin wrapper around ipcMain and ipcRenderer that's a little more ergonomic and type safe.
+
 ## Usage
 
-- Install:
+install:
 
 `yarn install @melb2991/electron-railbridge`
 
