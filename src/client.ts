@@ -1,4 +1,4 @@
-import { BridgeClientApi } from "./types";
+import { BridgeClientNamespaces, BridgeNamespaces } from "./types";
 
-export const BridgeClient = <T extends BridgeClientApi<T>>() =>
-  (window as any).__bridge__ as T;
+export const BridgeClient = <T extends BridgeNamespaces>() =>
+  (window as any).__bridge__ as BridgeClientNamespaces<T>;

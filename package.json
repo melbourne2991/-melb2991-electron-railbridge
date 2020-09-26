@@ -13,5 +13,7 @@
     "electron": "^10.1.2",
     "typescript": "^4.0.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@melb2991/electron-railbridge": "^1.0.0"
+  }
 }

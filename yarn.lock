@@ -18,6 +18,11 @@
     global-agent "^2.0.2"
     global-tunnel-ng "^2.7.1"
 
+"@melb2991/electron-railbridge@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@melb2991/electron-railbridge/-/electron-railbridge-1.0.0.tgz#023b38b2d6dc062de147b59461512d04fabeef16"
+  integrity sha512-oMiyzVcTdYPijV2PLutLuwBOGH62NQDX6/NmW0wA/ENFbRdqh6L78xUx4c7Vs1i0SEZYIt5K4TpLQUGhmskhhQ==
+
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"

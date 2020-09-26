@@ -51,7 +51,9 @@ function createWindow() {
 }
 
 app.on("ready", () => {
-  BridgeServer(api);
+  BridgeServer({
+    api,
+  });
 
   createWindow();
 
@@ -69,11 +71,15 @@ renderer/index.ts
 import { BridgeClient } from "@melb2991/electron-railbridge/client";
 import { Api } from "../api";
 
-const bridgeClient = BridgeClient<Api>();
+type BridgeType = {
+  api: Api;
+};
+
+const bridgeClient = BridgeClient<BridgeType>();
 
 async function callClient() {
-  console.log(await bridgeClient.hello("Jim")); // Hello Jim
-  console.log(await bridgeClient.goodbye("Bob")); // Goodbye Bob
+  console.log(await bridgeClient.api.hello("Jim")); // Hello Jim
+  console.log(await bridgeClient.api.goodbye("Bob")); // Goodbye Bob
 }
 
 callClient();
